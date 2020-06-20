@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="avatar_img">45dp</dimen>
+    <dimen name="online_indicator">6dp</dimen>
+</resources>
