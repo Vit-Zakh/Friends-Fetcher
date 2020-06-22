@@ -3,13 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="5dp">
+    app:cardCornerRadius="6dp"
+    app:cardElevation="5dp"
+    android:layout_marginBottom="3dp">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/avatarImage"
             android:layout_width="@dimen/avatar_img"
             android:layout_height="@dimen/avatar_img"
@@ -25,6 +26,7 @@
             app:layout_constraintStart_toEndOf="@id/avatarImage"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="12dp"
+            android:paddingStart="8dp"
             android:hint="@string/username_placeholder"/>
         <TextView
             android:id="@+id/residence"
@@ -33,13 +35,13 @@
             app:layout_constraintStart_toEndOf="@id/avatarImage"
             app:layout_constraintTop_toBottomOf="@id/username"
             android:textStyle="italic"
-            android:paddingStart="8dp"
+            android:paddingStart="12dp"
             android:hint="@string/residence_placeholder"/>
         <ImageView
             android:id="@+id/onlineImage"
-            android:layout_width="@dimen/online_indicator"
-            android:layout_height="@dimen/online_indicator"
-            android:background="@color/colorOnline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/online_indicator"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
